@@ -1,0 +1,181 @@
+:root {
+  --frame-width: 640;
+  --frame-height: 960;
+}
+
+@font-face {
+  font-family: "GT Walsheim";
+  font-style: normal;
+  font-weight: 200;
+  src: url("./fonts/tjx-walsheim-light.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+    font-family: "GT Walsheim";
+    font-style: normal;
+    font-weight: 800;
+    src: url("./fonts/tjx-walsheim-ultra-bold.woff2") format("woff2");
+    font-display: swap;
+  }
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "GT Walsheim";
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #000000;
+}
+
+body {
+  cursor: pointer;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  text-indent: -999px;
+  color: transparent;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+
+.holder {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* .holder * {
+    position: absolute;
+} */
+
+.swiper-slide,
+.swiper-wrapper,
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.swiper-slide__first {
+  background-image: url("./images/background-first-slide.jpg");
+}
+
+.swiper-slide__second {
+  background-image: url("./images/background-second-slide.jpg");
+}
+
+.swiper-slide__third {
+  background-image: url("./images/background-third-slide.jpg");
+}
+
+.logo {
+    position: absolute;
+    top: -17px;
+    right: 8px;
+}
+
+.swiper-slide__first .title {
+    display: block;
+    padding: 235px 0 4px 0;
+    font-size: 19px;
+    text-decoration: underline;
+    text-decoration-color: #f08430;
+    text-align: center;
+    line-height: 120%;
+    text-underline-offset: 4px;
+}
+
+.swiper-slide__first .description {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.swiper-slide__first .description span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.swiper-slide__first .mark {
+    display: block;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 0.8px;
+}
+
+.swiper-slide__second .title,
+.swiper-slide__third .title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.swiper-slide__second .description {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 230px;
+}
+
+.swiper-slide__third .description {
+  display: block;
+  margin: 0 auto;
+  padding-top: 195px;
+}
+
+.container {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.map {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  animation: 1s linear 1s infinite alternate button;
+  animation-timing-function: ease;
+  animation-delay: 2s;
+}
+
+@keyframes button {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(110%);
+  }
+}
