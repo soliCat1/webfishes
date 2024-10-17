@@ -3,22 +3,6 @@
   --frame-height: 960;
 }
 
-@font-face {
-  font-family: "GT Walsheim";
-  font-style: normal;
-  font-weight: 200;
-  src: url("./fonts/tjx-walsheim-light.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-    font-family: "GT Walsheim";
-    font-style: normal;
-    font-weight: 800;
-    src: url("./fonts/tjx-walsheim-ultra-bold.woff2") format("woff2");
-    font-display: swap;
-  }
-
 html,
 body {
   padding: 0;
@@ -59,9 +43,9 @@ button {
   overflow: hidden;
 }
 
-/* .holder * {
-    position: absolute;
-} */
+.holder * {
+  position: absolute;
+}
 
 .swiper-slide,
 .swiper-wrapper,
@@ -90,92 +74,58 @@ button {
 }
 
 .logo {
-    position: absolute;
-    top: -17px;
-    right: 8px;
+  top: -3%;
+  right: 4%;
 }
 
-.swiper-slide__first .title {
-    display: block;
-    padding: 235px 0 4px 0;
-    font-size: 19px;
-    text-decoration: underline;
-    text-decoration-color: #f08430;
-    text-align: center;
-    line-height: 120%;
-    text-underline-offset: 4px;
-}
-
-.swiper-slide__first .description {
-    display: block;
-    font-size: 12px;
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 30px;
-}
-
-.swiper-slide__first .description span {
-    display: block;
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
-
-.swiper-slide__first .mark {
-    display: block;
-    font-size: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 200;
-    letter-spacing: 0.8px;
+.first-slide-title {
+  display: block;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .swiper-slide__second .title,
 .swiper-slide__third .title {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 3%;
+  left: 5%;
 }
 
-.swiper-slide__second .description {
+.second-slide-description {
   display: block;
-  font-size: 20px;
-  text-align: center;
-  padding-top: 230px;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .swiper-slide__third .description {
   display: block;
-  margin: 0 auto;
-  padding-top: 195px;
-}
-
-.container {
-  position: absolute;
-  bottom: 40px;
+  top: 48%;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .map {
+  top: 62%;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
-  margin: 0 auto;
-  margin-bottom: 10px;
 }
 
 .button {
   display: block;
-  margin: 0 auto;
+  top: 83%;
+  left: 50%;
+  transform: translateX(-50%);
   animation: 1s linear 1s infinite alternate button;
   animation-timing-function: ease;
-  animation-delay: 2s;
 }
 
 @keyframes button {
   from {
-    transform: none;
+    transform: translateX(-50%);
   }
   to {
-    transform: scale(110%);
+    transform: translateX(-50%) scale(110%);
   }
 }
